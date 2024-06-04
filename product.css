@@ -1,0 +1,115 @@
+body {
+  background-color: linen;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+#header-img {
+  width: 225px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+#title {
+  margin-right: 45%;
+}
+
+input {
+  width: 150px;
+  height: 50px;
+}
+
+main {
+  text-align: center;
+  padding-top: 150px;
+}
+
+#nav {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+#features p::first-letter {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#features {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+video {
+  border: 2px solid black;
+  width: 600px;
+  height: 450px;
+}
+
+#products {
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.top {
+  width: 100%;
+  height: 25%;
+  border: 1px solid black;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding-top: 75px;
+  }
+
+  #header-img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  #title {
+    margin-right: 10%;
+  }
+
+  video {
+    width: 70%;
+    height: 100px;
+  }
+}
